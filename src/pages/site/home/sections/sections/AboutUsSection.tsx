@@ -39,79 +39,71 @@ const AboutUsSection = () => {
             <div className="space-y-6 text-gray-600 leading-relaxed">
               {/* Texto para móvil */}
               <div className="md:hidden">
-                <p>
-                  En Psicosagra, no somos solo una consulta; somos tu socio en
-                  salud integral, especializados en Psicología y Nutrición
-                  Clínica en Illescas. Entendemos que el bienestar verdadero
-                  florece en la armonía entre la mente y el cuerpo, y nuestro
-                  equipo está aquí para guiarte en esa conexión.
+                <p className="mb-4">
+                  Entendemos que el bienestar verdadero florece en la armonía
+                  entre la mente y el cuerpo, y nuestro equipo está aquí para
+                  guiarte en esa conexión.
                 </p>
-                <p className="text-black font-semibold">
-                  Más Allá del Tratamiento
-                </p>
-                <p>
+                <p className="mb-4">
                   Nuestra filosofía va más allá de ofrecer terapias o planes
                   dietéticos aislados. Brindamos un espacio seguro, profesional
                   y libre de juicios donde puedes iniciar una transformación
-                  real y sostenible. Con años de experiencia y formación
-                  continua, nuestro equipo altamente cualificado se dedica a
-                  escucharte con respeto y a acompañarte con herramientas
-                  rigurosas y humanas. Aplicamos una metodología probada que se
-                  enfoca en las causas profundas, no solo en los síntomas.
+                  real y sostenible.
                 </p>
-                <p className="text-black font-semibold">
-                  Atención Personalizada para Todas las Etapas
+                <p className="mb-4">
+                  Con años de experiencia y formación continua, nuestro equipo
+                  altamente cualificado se dedica a escucharte con respeto y a
+                  acompañarte con herramientas rigurosas y humanas. Aplicamos
+                  una metodología probada que se enfoca en las causas profundas,
+                  no solo en los síntomas.
                 </p>
-                <p>
+                <p className="mb-4">
                   Sabemos que cada persona y cada familia es un universo. Por
                   eso, si buscas orientación individual para superar un desafío
                   personal, apoyo para tu hijo en su desarrollo, o soluciones
                   para mejorar la dinámica familiar, encontrarás en Psicosagra
-                  una atención profundamente personalizada. Estamos aquí para
-                  ayudarte a construir un equilibrio y una conciencia que te
-                  permitirán vivir una vida más plena, saludable y consciente.
-                  Tu camino hacia una vida mejor comienza con la comprensión;
-                  estamos listos para comprenderte.
+                  una atención profundamente personalizada.
+                </p>
+                <p>
+                  Estamos aquí para ayudarte a construir un equilibrio y una
+                  conciencia que te permitirán vivir una vida más plena,
+                  saludable y consciente. Tu camino hacia una vida mejor
+                  comienza con la comprensión; estamos listos para comprenderte.
                 </p>
               </div>
 
               {/* Texto para escritorio */}
               <div className="hidden md:block">
-                <p>
-                  En Psicosagra, no somos solo una consulta; somos tu socio en
-                  salud integral, especializados en{" "}
-                  <strong className="text-black">Psicología</strong> y
-                  <strong className="text-black"> Nutrición Clínica</strong> en
-                  Illescas. Entendemos que el bienestar verdadero florece en la
-                  armonía entre la mente y el cuerpo, y nuestro equipo está aquí
-                  para guiarte en esa conexión.
+                <p className="mb-4">
+                  Entendemos que el bienestar verdadero florece en la armonía
+                  entre la mente y el cuerpo, y nuestro equipo está aquí para
+                  guiarte en esa conexión.
                 </p>
-                <p className="text-black font-semibold">
-                  Más Allá del Tratamiento
-                </p>
-                <p>
+                <p className="mb-4">
                   Nuestra filosofía va más allá de ofrecer terapias o planes
                   dietéticos aislados. Brindamos un espacio seguro, profesional
                   y libre de juicios donde puedes iniciar una transformación
-                  real y sostenible. Con años de experiencia y formación
-                  continua, nuestro equipo altamente cualificado se dedica a
-                  escucharte con respeto y a acompañarte con herramientas
-                  rigurosas y humanas. Aplicamos una metodología probada que se
-                  enfoca en las causas profundas, no solo en los síntomas.
+                  real y sostenible.
                 </p>
-                <p className="text-black font-semibold">
-                  Atención Personalizada para Todas las Etapas
+                <p className="mb-4">
+                  Con años de experiencia y formación continua, nuestro equipo
+                  altamente cualificado se dedica a escucharte con respeto y a
+                  acompañarte con herramientas rigurosas y humanas. Aplicamos
+                  una metodología probada que se enfoca en las causas profundas,
+                  no solo en los síntomas.
                 </p>
-                <p>
+                <p className="mb-4">
                   Sabemos que cada persona y cada familia es un universo. Por
                   eso, si buscas orientación individual para superar un desafío
                   personal, apoyo para tu hijo en su desarrollo, o soluciones
                   para mejorar la dinámica familiar, encontrarás en Psicosagra
-                  una atención profundamente personalizada. Estamos aquí para
-                  ayudarte a construir un equilibrio y una conciencia que te
-                  permitirán vivir una vida más plena, saludable y consciente.
-                  Tu camino hacia una vida mejor comienza con la comprensión;
-                  estamos listos para comprenderte.
+                  una atención profundamente personalizada.
+                </p>
+                <p>
+                  Estamos aquí para ayudarte a construir un equilibrio y una
+                  conciencia que te permitirán vivir una vida más plena,
+                  saludable y consciente. Tu camino hacia una vida mejor
+                  comienza con la comprensión; estamos listos para comprenderte.
                 </p>
               </div>
             </div>
@@ -173,12 +165,12 @@ const AboutUsSection = () => {
                     key={idx}
                     className={`glass-card rounded-2xl shadow-glass mb-4 overflow-hidden cursor-pointer relative group ${
                       style === "tall"
-                        ? "h-80"
+                        ? "h-80 md:h-96"
                         : style === "wide"
-                        ? "h-48"
+                        ? "h-48 md:h-64"
                         : style === "square"
-                        ? "h-64"
-                        : "h-56"
+                        ? "h-64 md:h-80"
+                        : "h-56 md:h-72"
                     }`}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}
