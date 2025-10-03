@@ -133,8 +133,8 @@ const Home = () => {
             <LogoLoop
               ariaLabel="Logos de organizaciones y entidades relacionadas"
               speed={80}
-              logoHeight={40}
-              gap={48}
+              logoHeight={70}
+              gap={64}
               fadeOut
               fadeOutColor="#ffffff"
               pauseOnHover
