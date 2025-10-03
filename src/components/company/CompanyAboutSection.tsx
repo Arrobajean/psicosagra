@@ -33,19 +33,19 @@ const CompanyAboutSection = () => {
       icon: Target,
       title: "Misión",
       description:
-        "Transformar espacios creando hogares únicos que reflejen la personalidad y necesidades de nuestros clientes, siempre con la máxima calidad y profesionalidad.",
+        "Mejorar la calidad de vida de nuestros pacientes ofreciendo un tratamiento integral que aborde tanto su salud mental como física, con profesionalidad, empatía y un compromiso genuino con su bienestar.",
     },
     {
       icon: Eye,
       title: "Visión",
       description:
-        "Ser la empresa de referencia en suelos de madera en Madrid, reconocida por nuestra excelencia, innovación y compromiso con la satisfacción del cliente.",
+        "Ser el centro de referencia en Psicología y Nutrición Clínica en Illescas, reconocidos por nuestra excelencia profesional, enfoque integral y el impacto positivo y duradero en la vida de nuestros pacientes.",
     },
     {
       icon: Heart,
       title: "Valores",
       description:
-        "Nos guiamos por la transparencia en cada presupuesto, la puntualidad en los plazos, la excelencia técnica en los acabados y una atención cercana que da confianza de principio a fin.",
+        "Nos guiamos por la ética profesional, la confidencialidad absoluta, el respeto a cada persona, la empatía en el trato, la actualización constante de conocimientos y un espacio libre de juicios donde te sientas seguro.",
     },
   ];
 
@@ -58,53 +58,53 @@ const CompanyAboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-sm font-medium text-gray-500 mb-4 tracking-wider uppercase">
-              El corazón de la empresa
+              El corazón del centro
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              15 años transformando espacios con suelos de madera
+              Transformando vidas a través del bienestar integral
             </h3>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <h4 className="text-lg font-semibold text-black mb-4">
                 Nuestra Historia
               </h4>
               <p>
-                Desde hace más de 15 años, en{" "}
-                <strong className="text-black">Easywood</strong> nos hemos
-                especializado en suelos de madera, parquet y tarimas. Cada
-                proyecto nos ha permitido perfeccionar nuestras técnicas
-                profesionales y consolidar una cultura de excelencia en el
-                sector de la madera.
+                En <strong className="text-black">Psicosagra</strong>, somos un
+                centro especializado en Psicología y Nutrición Clínica ubicado
+                en Illescas. Nuestro enfoque único combina el cuidado de la
+                mente y el cuerpo para ofrecer un tratamiento integral que
+                aborda tu bienestar desde todas las perspectivas.
               </p>
               <p>
                 Nuestra especialización en{" "}
                 <strong className="text-black">
-                  suelos de madera, instalación y restauración
+                  terapia psicológica, nutrición clínica y atención
+                  personalizada
                 </strong>{" "}
-                nos ha convertido en una empresa de referencia en Madrid, con
-                más de 200 proyectos realizados con la máxima calidad y
-                durabilidad.
+                nos ha convertido en un centro de referencia en Illescas, donde
+                cada paciente recibe un plan de tratamiento diseñado a medida
+                con la máxima calidad y profesionalidad.
               </p>
               <p className="text-sm text-gray-500 mt-4">
-                Nuestro compromiso es ofrecer un servicio de calidad con
-                atención personalizada y resultados que superen las expectativas
-                de nuestros clientes.
+                Nuestro compromiso es ofrecer un espacio seguro y de confianza,
+                donde puedas sentirte escuchado, comprendido y acompañado en tu
+                proceso de cambio hacia una vida más plena y saludable.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">200+</div>
-                <div className="text-sm text-gray-500">Proyectos</div>
+                <div className="text-3xl font-bold text-black">500+</div>
+                <div className="text-sm text-gray-500">Pacientes</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-black">15+</div>
-                <div className="text-sm text-gray-500">Años</div>
+                <div className="text-3xl font-bold text-black">6</div>
+                <div className="text-sm text-gray-500">Profesionales</div>
               </div>
             </div>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md">
             <img
-              src="/images/UI/landing4.jpeg"
-              alt="Suelo de madera con acabado profesional y diseño moderno"
+              src="/placeholder.svg"
+              alt="Centro de Psicología y Nutrición Psicosagra en Illescas"
               className="w-full h-80 object-cover"
               loading="lazy"
             />
@@ -112,11 +112,11 @@ const CompanyAboutSection = () => {
         </div>
         <div className="text-center mb-12">
           <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-            Lo que nos mueve en Easywood
+            Lo que nos mueve en Psicosagra
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            No solo instalamos suelos, creamos espacios únicos donde vivirás
-            cada día con comodidad y estilo.
+            No solo tratamos síntomas, acompañamos procesos de cambio real hacia
+            una vida más plena, equilibrada y saludable en todos los aspectos.
           </p>
         </div>
         <div

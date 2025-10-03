@@ -1,6 +1,6 @@
 <div align="center">
 
-# Easywood — Sitio web corporativo
+# Psicosagra — Sitio web corporativo
 
 Vite + React + TypeScript · Tailwind CSS · Firebase (Firestore + Functions) · Vercel
 
@@ -8,7 +8,7 @@ Vite + React + TypeScript · Tailwind CSS · Firebase (Firestore + Functions) ·
 
 ## 🚀 Descripción
 
-Este repositorio contiene el código del sitio web corporativo de Easywood. Está construido con Vite + React + TypeScript, estilos con Tailwind CSS, SEO con `react-helmet-async` y persistencia de leads en Firebase/Firestore. Opcionalmente, se incluyen Cloud Functions para notificaciones por email al recibir nuevos leads.
+Este repositorio contiene el código del sitio web corporativo de Psicosagra. Está construido con Vite + React + TypeScript, estilos con Tailwind CSS, SEO con `react-helmet-async` y persistencia de leads en Firebase/Firestore. Opcionalmente, se incluyen Cloud Functions para notificaciones por email al recibir nuevos leads.
 
 ## 📦 Tecnologías principales
 
@@ -51,7 +51,7 @@ Este repositorio contiene el código del sitio web corporativo de Easywood. Est�
 
 ```bash
 git clone <URL_DEL_REPO>
-cd Easywood
+cd psicosagra
 ```
 
 2. Instala dependencias
@@ -225,7 +225,7 @@ npm run deploy
 
 ## 📄 Licencia
 
-© 2025 Easywood. Todos los derechos reservados. Uso interno/privado salvo acuerdo expreso.
+© 2025 Psicosagra. Todos los derechos reservados.
 
 ---
 

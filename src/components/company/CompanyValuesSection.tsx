@@ -96,7 +96,7 @@ const CompanyValuesSection = () => {
                 al cliente"
               </p>
               <div className="mt-4 text-sm text-gray-400">
-                - Filosofía Easywood
+                - Filosofía Psicosagra
               </div>
             </div>
           </div>

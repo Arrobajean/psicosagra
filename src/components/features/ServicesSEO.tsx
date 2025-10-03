@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet-async";
 const ServicesSEO = () => (
   <Helmet>
     <title>
-      Servicios de Reformas Integrales en Madrid | Easywood | Cocinas, Baños y
+      Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y
       Más
     </title>
     <meta
       name="description"
-      content="Easywood ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
     />
     <meta
       name="keywords"
@@ -16,35 +16,35 @@ const ServicesSEO = () => (
     />
     <meta
       property="og:title"
-      content="Servicios de Reformas Integrales en Madrid | Easywood | Cocinas, Baños y Más"
+      content="Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y Más"
     />
     <meta
       property="og:description"
-      content="Easywood ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://easywood.es/servicios" />
+    <meta property="og:url" content="https://psicosagra.es/servicios" />
     <meta
       property="og:image"
-      content="https://easywood.es/favicon/android-chrome-192x192.png"
+      content="https://psicosagra.es/favicon/android-chrome-192x192.png"
     />
-    <meta property="og:site_name" content="Easywood" />
+    <meta property="og:site_name" content="Psicosagra" />
     <meta property="og:locale" content="es_ES" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://easywood.es/servicios" />
+    <meta property="twitter:url" content="https://psicosagra.es/servicios" />
     <meta
       property="twitter:title"
-      content="Servicios de Reformas Integrales en Madrid | Easywood | Cocinas, Baños y Más"
+      content="Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y Más"
     />
     <meta
       property="twitter:description"
-      content="Easywood ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
     />
     <meta
       property="twitter:image"
-      content="https://easywood.es/favicon/android-chrome-192x192.png"
+      content="https://psicosagra.es/favicon/android-chrome-192x192.png"
     />
-    <link rel="canonical" href="https://easywood.es/servicios" />
+    <link rel="canonical" href="https://psicosagra.es/servicios" />
     <meta
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -59,10 +59,10 @@ const ServicesSEO = () => (
       {JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
-        name: "Servicios de Reformas Integrales en Madrid | Easywood",
+        name: "Servicios de Reformas Integrales en Madrid | Psicosagra",
         description:
-          "Easywood ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos.",
-        url: "https://easywood.es/servicios",
+          "Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos.",
+        url: "https://psicosagra.es/servicios",
         mainEntity: {
           "@type": "Service",
           name: "Servicios de Reformas Integrales en Madrid",
@@ -70,7 +70,7 @@ const ServicesSEO = () => (
             "Servicios completos de reformas y construcción en Madrid y alrededores",
           provider: {
             "@type": "LocalBusiness",
-            name: "Easywood",
+            name: "Psicosagra",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Calle de San Gumersindo 7",
@@ -80,7 +80,7 @@ const ServicesSEO = () => (
               addressCountry: "ES",
             },
             telephone: "+34 622 00 30 62",
-            email: "info@easywood.es",
+            email: "info@psicosagra.es",
           },
         },
         breadcrumb: {
@@ -90,13 +90,13 @@ const ServicesSEO = () => (
               "@type": "ListItem",
               position: 1,
               name: "Inicio",
-              item: "https://easywood.es/",
+              item: "https://psicosagra.es/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Servicios",
-              item: "https://easywood.es/servicios",
+              item: "https://psicosagra.es/servicios",
             },
           ],
         },

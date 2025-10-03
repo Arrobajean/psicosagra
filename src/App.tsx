@@ -9,17 +9,17 @@ import {
   Outlet,
   Navigate,
 } from "react-router-dom";
-import Home from "./pages/site/Home";
-import AboutUs from "./pages/site/AboutUs";
-import Services from "./pages/site/Services";
-import Projects from "./pages/site/Projects";
-import ProjectDetail from "./pages/site/ProjectDetail";
-import Contact from "./pages/site/Contact";
-import LegalNotice from "./pages/legales/LegalNotice";
-import PrivacyPolicy from "./pages/legales/PrivacyPolicy";
-import CookiesPolicy from "./pages/legales/CookiesPolicy";
-import LiquidGlassDemo from "./pages/site/LiquidGlassDemo";
-import NotFound from "./pages/site/NotFound";
+import Home from "@/pages/site/home/pages/Home";
+import AboutUs from "@/pages/site/about/pages/AboutUs";
+import Services from "@/pages/site/services/pages/Services";
+import Blog from "@/pages/site/blog/pages/Blog";
+import BlogDetail from "@/pages/site/blog/pages/BlogDetail";
+import Contact from "@/pages/site/home/pages/Contact";
+import LegalNotice from "./pages/legal/LegalNotice";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
+import CookiesPolicy from "./pages/legal/CookiesPolicy";
+// import LiquidGlassDemo from "@/pages/site/demo/pages/LiquidGlassDemo"; // (no existe)
+import NotFound from "@/pages/site/not-found/pages/NotFound";
 import CookieConsent from "./components/layout/CookieConsent";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
@@ -63,20 +63,12 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "la-empresa", element: <AboutUs /> },
+      { path: "nosotros", element: <AboutUs /> },
       { path: "servicios", element: <Services /> },
-      { path: "nuestros-trabajos", element: <Projects /> },
-      { path: "nuestros-trabajos/:slug", element: <ProjectDetail /> },
-      {
-        path: "proyectos",
-        element: <Navigate to="/nuestros-trabajos" replace />,
-      },
-      {
-        path: "proyectos/:slug",
-        element: <Navigate to="/nuestros-trabajos/:slug" replace />,
-      },
+      { path: "blog", element: <Blog /> },
+      { path: "blog/:slug", element: <BlogDetail /> },
       { path: "contacto", element: <Contact /> },
-      { path: "liquid-glass-demo", element: <LiquidGlassDemo /> },
+      // { path: "liquid-glass-demo", element: <LiquidGlassDemo /> },
       { path: "aviso-legal", element: <LegalNotice /> },
       { path: "politica-privacidad", element: <PrivacyPolicy /> },
       { path: "politica-cookies", element: <CookiesPolicy /> },

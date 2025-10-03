@@ -12,10 +12,10 @@ const useNavigationLogic = () => {
   const navigate = useNavigate();
 
   const isHomePage = location.pathname === "/";
-  const isProjectsPage = location.pathname.startsWith("/nuestros-trabajos");
+  const isBlogPage = location.pathname.startsWith("/blog");
   const isServicesPage = location.pathname === "/servicios";
   const isContactPage = location.pathname === "/contacto";
-  const isCompanyPage = location.pathname === "/la-empresa";
+  const isCompanyPage = location.pathname === "/nosotros";
   const isLegalPage =
     location.pathname.startsWith("/aviso-legal") ||
     location.pathname.startsWith("/politica-privacidad") ||
@@ -50,14 +50,14 @@ const useNavigationLogic = () => {
   const isNavVisible = useMemo(
     () =>
       isScrolled ||
-      isProjectsPage ||
+      isBlogPage ||
       isServicesPage ||
       isContactPage ||
       isCompanyPage ||
       isLegalPage,
     [
       isScrolled,
-      isProjectsPage,
+      isBlogPage,
       isServicesPage,
       isContactPage,
       isCompanyPage,
@@ -65,7 +65,7 @@ const useNavigationLogic = () => {
     ]
   );
 
-  const logoSrc = "/images/logo/easywood_logo.png";
+  const logoSrc = "/images/logo/psicosagra.png";
 
   return {
     // state

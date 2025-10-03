@@ -16,8 +16,8 @@ const CompanyHeroSection = () => {
             <AnimatedSection animation="slideRight">
               <div className="flex flex-col items-center mb-6">
                 <img
-                  src="/images/logo/easywood_logo.png"
-                  alt="Logo Easywood blanco"
+                  src="/images/logo/psicosagra.png"
+                  alt="Logo Psicosagra blanco"
                   className="w-56 h-56 object-contain mb-4"
                   loading="lazy"
                 />
@@ -82,7 +82,7 @@ const CompanyHeroSection = () => {
               >
                 <img
                   src="/images/UI/landing1.jpeg"
-                  alt="Proyecto Easywood - Suelo de madera"
+                  alt="Proyecto Psicosagra - Suelo de madera"
                   className="w-full h-96 object-cover"
                 />
               </motion.div>

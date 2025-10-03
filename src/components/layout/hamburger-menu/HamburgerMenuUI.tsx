@@ -22,9 +22,9 @@ interface HamburgerMenuUIProps {
 
 const navigationItems = [
   { label: "Inicio", pagePath: "/" },
-  { label: "Nosotros", pagePath: "/la-empresa" },
+  { label: "Nosotros", pagePath: "/nosotros" },
   { label: "Servicios", pagePath: "/servicios" },
-  { label: "Trabajos", pagePath: "/nuestros-trabajos" },
+  { label: "Blog", pagePath: "/blog" },
   { label: "Contacto", pagePath: "/contacto" },
 ];
 
@@ -154,7 +154,7 @@ export const HamburgerMenuUI = ({
           >
             {/* Título oculto para lectores de pantalla */}
             <h1 id="hamburger-menu-title" className="sr-only">
-              Menú principal de EasyWood
+              Menú principal de Psicosagra
             </h1>
 
             {/* Elementos del menú */}
@@ -238,7 +238,7 @@ export const HamburgerMenuUI = ({
                 }}
               >
                 <a
-                  href="https://www.instagram.com/easywood_es/"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -253,13 +253,13 @@ export const HamburgerMenuUI = ({
                     textDecoration: "none",
                     transition: "all 0.3s ease",
                   }}
-                  className="hover:bg-[#74bd51] hover:scale-110"
-                  aria-label="Visitar perfil de Instagram de EasyWood (se abre en ventana nueva)"
+                  className="hover:bg-[#2563eb] hover:scale-110"
+                  aria-label="Visitar perfil de Instagram de Psicosagra (se abre en ventana nueva)"
                 >
                   <SiInstagram size={20} aria-hidden="true" />
                 </a>
                 <a
-                  href="https://www.tiktok.com/@easywood_es"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -274,13 +274,13 @@ export const HamburgerMenuUI = ({
                     textDecoration: "none",
                     transition: "all 0.3s ease",
                   }}
-                  className="hover:bg-[#74bd51] hover:scale-110"
-                  aria-label="Visitar perfil de TikTok de EasyWood (se abre en ventana nueva)"
+                  className="hover:bg-[#2563eb] hover:scale-110"
+                  aria-label="Visitar perfil de TikTok de Psicosagra (se abre en ventana nueva)"
                 >
                   <SiTiktok size={20} aria-hidden="true" />
                 </a>
                 <a
-                  href="https://www.youtube.com/@easywood_es"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -295,8 +295,8 @@ export const HamburgerMenuUI = ({
                     textDecoration: "none",
                     transition: "all 0.3s ease",
                   }}
-                  className="hover:bg-[#74bd51] hover:scale-110"
-                  aria-label="Visitar canal de YouTube de EasyWood (se abre en ventana nueva)"
+                  className="hover:bg-[#2563eb] hover:scale-110"
+                  aria-label="Visitar canal de YouTube de Psicosagra (se abre en ventana nueva)"
                 >
                   <SiYoutube size={20} aria-hidden="true" />
                 </a>

@@ -1,12 +1,10 @@
 import {
-  Trees,
-  Layers,
-  Hammer,
-  Wrench,
-  Eraser,
-  PaintBucket,
-  SquareStack,
-  LayoutGrid,
+  Baby,
+  UserRound,
+  HeartHandshake,
+  Brain,
+  Scale,
+  Apple,
 } from "lucide-react";
 
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
@@ -25,107 +23,67 @@ export type ServiceItem = {
 
 export const servicesData: ServiceItem[] = [
   {
-    icon: SquareStack,
-    title: "Tarima Exterior sintética",
+    icon: Baby,
+    title: "Infantojuvenil",
+    description: "Acompañamiento especializado para niños y adolescentes.",
+    features: [
+      "Evaluación del desarrollo y emocional",
+      "Intervención en dificultades conductuales",
+      "Orientación familiar y escolar",
+    ],
+  },
+  {
+    icon: UserRound,
+    title: "Individual (Adultos)",
     description:
-      "Sistemas de tarima tecnológica para exterior, alta resistencia y mínimo mantenimiento.",
+      "Terapia para el manejo emocional, crecimiento personal y desafíos de la vida adulta.",
     features: [
-      "Antideslizante y resistente al agua",
-      "Resistente a rayos UV y manchas",
-      "Colocación con grapa oculta",
+      "Ansiedad, estrés y depresión",
+      "Autoestima y gestión emocional",
+      "Acompañamiento en duelos y cambios",
     ],
   },
   {
-    icon: Trees,
-    title: "Tarimas de Exterior de Madera",
+    icon: HeartHandshake,
+    title: "Familiar y de Pareja",
     description:
-      "Tarimas de madera natural para exterior, tratadas para intemperie.",
+      "Intervenciones sistémicas para mejorar la comunicación y resolver conflictos.",
     features: [
-      "Maderas tropicales y pino tratado",
-      "Tratamientos protectores y lasures",
-      "Instalación sobre rastreles",
+      "Dinámicas familiares y roles",
+      "Resolución de conflictos y acuerdos",
+      "Fortalecimiento del vínculo",
     ],
   },
   {
-    icon: Layers,
-    title: "Tarima Flotante",
+    icon: Brain,
+    title: "Neurodivergencias",
     description:
-      "Suelos flotantes con sistema click, instalación rápida y limpia.",
+      "Evaluación y apoyo para TDAH, TEA y otras condiciones del neurodesarrollo.",
     features: [
-      "Aislamiento acústico con base",
-      "Amplia variedad de acabados",
-      "Remates y rodapiés incluidos",
+      "Detección y evaluación funcional",
+      "Estrategias de apoyo en el hogar",
+      "Coordinación con entorno educativo",
     ],
   },
   {
-    icon: Hammer,
-    title: "Tarima Maciza",
+    icon: Scale,
+    title: "Psicología Forense / Peritaje",
+    description: "Informes periciales y asesoramiento en procesos legales.",
+    features: [
+      "Evaluación objetiva y metodológica",
+      "Elaboración de informes periciales",
+      "Ratificación en sede judicial",
+    ],
+  },
+  {
+    icon: Apple,
+    title: "Nutrición Clínica",
     description:
-      "Tarima de madera maciza para un suelo noble, cálido y duradero.",
+      "Asesoramiento dietético-nutricional para el manejo de patologías y bienestar integral.",
     features: [
-      "Encolada o clavada sobre rastrel",
-      "Lijado y barnizado profesional",
-      "Reposición de lamas defectuosas",
-    ],
-  },
-  {
-    icon: SquareStack,
-    title: "Suelos Vinílicos",
-    description: "Suelos vinílicos SPC/LVT resistentes al agua y al desgaste.",
-    features: [
-      "Formato lamas o losetas",
-      "Apto para cocinas y baños",
-      "Fácil mantenimiento",
-    ],
-  },
-  {
-    icon: LayoutGrid,
-    title: "Suelos Laminados",
-    description: "Suelos laminados de alta resistencia y estética natural.",
-    features: [
-      "Clases AC4, AC5, AC6",
-      "Instalación con junta de dilatación",
-      "Transiciones y perfiles a juego",
-    ],
-  },
-  {
-    icon: Wrench,
-    title: "Instalación de Parquet",
-    description: "Colocación profesional de parquet encolado o flotante.",
-    features: [
-      "Preparación del soporte",
-      "Encolado y cepillado de ajuste",
-      "Barnizado o aceite de acabado",
-    ],
-  },
-  {
-    icon: Eraser,
-    title: "Acuchillar Parquet",
-    description: "Lijado y barnizado para devolver vida y brillo al parquet.",
-    features: [
-      "Lijado en varias pasadas",
-      "Tapado de juntas y microfisuras",
-      "Barnices al agua de alta resistencia",
-    ],
-  },
-  {
-    icon: Hammer,
-    title: "Reparación de Parquet",
-    description: "Sustitución de lamas, nivelación y corrección de daños.",
-    features: [
-      "Reposición puntual de lamas",
-      "Nivelado y fijación de piezas sueltas",
-      "Ajuste de rodapiés y remates",
-    ],
-  },
-  {
-    icon: PaintBucket,
-    title: "Teñir Parquet y Suelos",
-    description: "Cambio de tono mediante tintes y acabados profesionales.",
-    features: [
-      "Amplia carta de colores",
-      "Acabado mate, satinado o brillo",
-      "Sellado y protección duradera",
+      "Planes nutricionales personalizados",
+      "Educación alimentaria sostenible",
+      "Acompañamiento y seguimiento",
     ],
   },
 ];

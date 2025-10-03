@@ -1,4 +1,4 @@
-# Guía de Fuentes - Easywood
+# Guía de Fuentes - Psicosagra
 
 ## Fuentes Configuradas
 

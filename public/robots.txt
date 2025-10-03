@@ -44,15 +44,15 @@ Disallow: /dev/
 
 # Allow important SEO pages
 Allow: /servicios/
-Allow: /nuestros-trabajos/
-Allow: /la-empresa/
+Allow: /blog/
+Allow: /nosotros/
 Allow: /contacto/
 
 # Sitemap location
-Sitemap: https://easywood.es/sitemap.xml
+Sitemap: https://psicosagra.es/sitemap.xml
 
 # Crawl delay (optional, for very large sites)
 # Crawl-delay: 1
 
-# SEO Local: Empresa de suelos en Madrid
-# Easywood - Suelos de madera, tarima y parquet en Madrid
+# SEO Local: Centro de Psicología y Nutrición en Illescas
+# Psicosagra - Psicología y Nutrición Clínica en Illescas, Toledo

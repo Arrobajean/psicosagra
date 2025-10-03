@@ -1,5 +1,5 @@
 /**
- * Performance Optimization Utilities for Easywood
+ * Performance Optimization Utilities for Psicosagra
  * Focuses on improving Core Web Vitals and overall page performance
  */
 
@@ -46,7 +46,7 @@ export const preloadCriticalResources = (): void => {
 
   // Preload logo
   const logo = new Image();
-  logo.src = "/images/logo/easywood_logo.png";
+  logo.src = "/images/logo/psicosagra.png";
 
   // Preload critical fonts
   const fontLink = document.createElement("link");

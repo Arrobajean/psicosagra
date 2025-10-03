@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import useNavigationLogic from "./Navigation.logic.ts";
 import { HamburgerMenu } from "./hamburger-menu";
+import { RequestQuoteButton } from "@/components/common";
 
 // Skip link component for accessibility
 const SkipLink = () => (
@@ -17,9 +18,9 @@ const SkipLink = () => (
 
 const navigationItems = [
   { label: "Inicio", pagePath: "/" },
-  { label: "Nosotros", pagePath: "/la-empresa" },
+  { label: "Nosotros", pagePath: "/nosotros" },
   { label: "Servicios", pagePath: "/servicios" },
-  { label: "Trabajos", pagePath: "/nuestros-trabajos" },
+  { label: "Blog", pagePath: "/blog" },
   { label: "Contacto", pagePath: "/contacto" },
 ];
 
@@ -44,7 +45,7 @@ const Navigation = memo(() => {
     : isLegalPage
     ? "text-black"
     : "text-white";
-  const hoverColor = "hover:text-[#74bd51]";
+  const hoverColor = "hover:text-[#2563eb]";
 
   return (
     <>
@@ -68,7 +69,7 @@ const Navigation = memo(() => {
             >
               <img
                 src={logoSrc}
-                alt="Logo EasyWood"
+                alt="Logo Psicosagra"
                 className="h-16 sm:h-18 md:h-12 lg:h-14 w-auto max-w-[220px] sm:max-w-[240px] md:max-w-[220px] object-contain transition-all duration-300 bg-transparent rounded-lg group-hover:animate-logo-bounce"
               />
             </Link>
@@ -89,22 +90,7 @@ const Navigation = memo(() => {
 
             {/* Desktop CTA aligned with links */}
             <div className="hidden md:block">
-              <Link
-                to="/contacto"
-                aria-label="Ir a contacto para pedir presupuesto"
-              >
-                <Button
-                  size="sm"
-                  className="group flex items-center glass-button-dark bg-white text-black hover:bg-gray-100 font-medium px-6 fast-transitions touch-optimized optimize-interactions shadow-glass hover:shadow-glass-lg border-0 transition-all duration-300 ease-out"
-                >
-                  <span>Pide presupuesto</span>
-                  <ArrowRight
-                    size={18}
-                    className="ml-2 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 ease-out"
-                    aria-hidden="true"
-                  />
-                </Button>
-              </Link>
+              <RequestQuoteButton />
             </div>
 
             {/* Mobile Menu Button - Hamburger Menu */}

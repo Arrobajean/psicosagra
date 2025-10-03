@@ -6,76 +6,61 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://easywood.es/</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Páginas principales del sitio -->
   <url>
-    <loc>https://easywood.es/la-empresa</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/nosotros</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://easywood.es/servicios</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/servicios</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://easywood.es/nuestros-trabajos</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/blog</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://easywood.es/contacto</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/contacto</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Páginas legales -->
   <url>
-    <loc>https://easywood.es/aviso-legal</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/aviso-legal</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://easywood.es/politica-privacidad</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/politica-privacidad</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://easywood.es/politica-cookies</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://psicosagra.es/politica-cookies</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-
-  <!-- Trabajos individuales (ejemplos) -->
-  <url>
-    <loc>https://easywood.es/nuestros-trabajos/reforma-integral-pirineos</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://easywood.es/nuestros-trabajos/cocina-contemporanea-aquitania</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
 </urlset>

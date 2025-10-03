@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import AnimatedSection from "@/components/common/AnimatedSection";
 import { motion } from "framer-motion";
-import { teamMembers, processSteps } from "@/data/teamData";
+import { teamMembers, processSteps, TeamMember } from "@/data/teamData";
+import TeamMemberModal from "./TeamMemberModal";
 
 const TeamAndProcessSection = () => {
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleMemberClick = (member: TeamMember) => {
+    setSelectedMember(member);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedMember(null), 200);
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -14,21 +28,26 @@ const TeamAndProcessSection = () => {
               Nuestro Equipo
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Los profesionales que hacen posible cada suelo de madera
+              Profesionales especializados en tu bienestar integral
             </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Haz clic en cualquier profesional para conocer más sobre su
+              formación, especialidades y enfoque terapéutico.
+            </p>
           </div>
         </AnimatedSection>
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto justify-items-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <AnimatedSection
               key={index}
               animation="slideUp"
-              delay={index * 0.2}
+              delay={index * 0.1}
             >
               <motion.div
-                className="text-center"
-                whileHover={{ y: -10 }}
+                className="text-center cursor-pointer"
+                whileHover={{ y: -10, scale: 1.02 }}
                 transition={{ duration: 0.3 }}
+                onClick={() => handleMemberClick(member)}
               >
                 <div className="relative mb-6">
                   <div className="w-32 h-32 rounded-full mx-auto bg-gray-200 shadow-lg flex items-center justify-center overflow-hidden">
@@ -53,13 +72,6 @@ const TeamAndProcessSection = () => {
                       </svg>
                     )}
                   </div>
-                  <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-black rounded-full flex items-center justify-center">
-                    <img
-                      src="/images/logo/easywood_logo.png"
-                      alt="Logo Easywood"
-                      className="w-6 h-6 object-contain"
-                    />
-                  </div>
                 </div>
                 <h4 className="text-xl font-bold text-black mb-2">
                   {member.name}
@@ -67,9 +79,12 @@ const TeamAndProcessSection = () => {
                 <p className="text-sm font-medium text-gray-500 mb-3">
                   {member.role}
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed line-clamp-3">
                   {member.description}
                 </p>
+                <button className="mt-4 text-black font-medium text-sm hover:underline">
+                  Ver perfil completo →
+                </button>
               </motion.div>
             </AnimatedSection>
           ))}
@@ -85,7 +100,7 @@ const TeamAndProcessSection = () => {
               Nuestro Proceso
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Metodología probada en más de 200 suelos de madera
+              Un proceso terapéutico transparente y efectivo
             </h3>
           </div>
         </AnimatedSection>
@@ -111,6 +126,13 @@ const TeamAndProcessSection = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      <TeamMemberModal
+        member={selectedMember}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </section>
   );
 };
