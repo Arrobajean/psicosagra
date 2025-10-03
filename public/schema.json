@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness", "HomeAndConstructionBusiness"],
+  "@type": ["Organization", "LocalBusiness", "MedicalBusiness"],
   "name": "Psicosagra",
   "alternateName": "Psicosagra Psicología y Nutrición Clínica",
-  "description": "Empresa de reformas integrales en Madrid con más de 25 años de experiencia. Reformas de viviendas, locales y oficinas. Calidad, garantía y presupuesto gratuito.",
+  "description": "Centro de psicología especializado en Madrid con más de 15 años de experiencia. Terapia individual, familiar, infantil y neurodivergencias. Calidad, garantía y consulta gratuita.",
   "url": "https://psicosagra.es/",
   "logo": "/images/logo/psicosagra.png",
   "image": "/images/logo/psicosagra.png",
-  "foundingDate": "1999",
+  "foundingDate": "2009",
   "numberOfEmployees": "10-50",
   "address": {
     "@type": "PostalAddress",
@@ -31,7 +31,7 @@
     "latitude": 40.4168,
     "longitude": -3.7038
   },
-  "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-14:00",
+  "openingHours": "Mo-Fr 09:00-20:00, Sa 09:00-14:00",
   "priceRange": "€€",
   "currenciesAccepted": "EUR",
   "paymentAccepted": "Cash, Credit Card, Bank Transfer",
@@ -61,10 +61,10 @@
         "@type": "Person",
         "name": "María García"
       },
-      "reviewBody": "El resultado superó todas nuestras expectativas. El equipo fue muy profesional y cumplió todos los plazos acordados.",
+      "reviewBody": "La terapia me ayudó muchísimo. El equipo fue muy profesional y me sentí muy cómoda durante todo el proceso.",
       "itemReviewed": {
         "@type": "Service",
-        "name": "Reforma Integral en Madrid"
+        "name": "Terapia Individual en Madrid"
       }
     },
     {
@@ -78,10 +78,10 @@
         "@type": "Person",
         "name": "José Martínez"
       },
-      "reviewBody": "La cocina quedó espectacular. Ahora tenemos mucho más espacio y es muy funcional para cocinar.",
+      "reviewBody": "La terapia familiar nos ayudó a comunicarnos mejor. Ahora tenemos una relación mucho más sana y funcional.",
       "itemReviewed": {
         "@type": "Service",
-        "name": "Reforma de Cocina en Madrid Centro"
+        "name": "Terapia Familiar en Madrid"
       }
     }
   ],

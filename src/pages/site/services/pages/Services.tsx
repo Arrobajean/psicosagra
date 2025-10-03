@@ -9,13 +9,13 @@ import { servicesData } from "@/data/servicesData";
 
 const Services = () => {
   useEffect(() => {
-    document.title = "Psicosagra - Servicios de Reformas Integrales | Madrid";
+    document.title = "Psicosagra - Servicios de Psicología | Madrid";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Servicios completos de reformas integrales en Madrid. Cocinas, baños, suelos, electricidad y más. Más de 25 años de experiencia."
+        "Servicios completos de psicología en Madrid. Terapia individual, familiar, infantil, neurodivergencias y más. Más de 15 años de experiencia."
       );
     }
   }, []);
@@ -36,14 +36,14 @@ const Services = () => {
               <AnimatedSection
                 key={service.title}
                 animation="slideUp"
-                delay={index * 0.1}
+                delay={0.2 + index * 0.1}
               >
                 <ServiceCard service={service} delay={0} />
               </AnimatedSection>
             ))}
           </div>
 
-          <AnimatedSection animation="scale" delay={0.8}>
+          <AnimatedSection animation="scale" delay={0.2}>
             <ServicesCTA />
           </AnimatedSection>
         </div>

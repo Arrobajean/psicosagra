@@ -39,7 +39,7 @@ const ContactSection = () => {
         </AnimatedSection>
 
         {/* CTA Principal */}
-        <AnimatedSection animation="scale" delay={0.3}>
+        <AnimatedSection animation="scale" delay={0.2}>
           <div className="max-w-2xl mx-auto">
             <div className="glass-card rounded-3xl p-6 md:p-8 lg:p-12 text-center h-full flex flex-col justify-center">
               <div className="mb-6 md:mb-8">

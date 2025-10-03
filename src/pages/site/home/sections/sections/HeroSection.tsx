@@ -4,10 +4,9 @@ import AnimatedSection from "@/components/common/AnimatedSection";
 import { motion } from "framer-motion";
 import { HeartHandshake } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
-import { useHeroImages, useWhatsApp, useResponsiveAnimation } from "@/hooks";
+import { useWhatsApp, useResponsiveAnimation } from "@/hooks";
 
 const HeroSection = () => {
-  const { heroImages, currentSlide, handleSlideChange } = useHeroImages();
   const { handleWhatsAppClick } = useWhatsApp();
   const timing = useResponsiveAnimation();
 
@@ -19,31 +18,6 @@ const HeroSection = () => {
     >
       {/* Background with fallback */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700" />
-
-      {/* Image Slider */}
-      <div
-        className="absolute inset-0"
-        role="img"
-        aria-label="Galería de trabajos destacados"
-      >
-        {heroImages.map((image, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: index === currentSlide ? 1 : 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="absolute inset-0 optimize-interactions"
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover opacity-90"
-              loading="eager"
-              decoding="async"
-            />
-          </motion.div>
-        ))}
-      </div>
 
       {/* Glass Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
@@ -150,34 +124,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Slide indicators - Hidden since we only have one image */}
-      {heroImages.length > 1 && (
-        <AnimatedSection animation="fade" delay={0.5}>
-          <div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2"
-            role="group"
-            aria-label="Indicadores de diapositivas"
-          >
-            {heroImages.map((_, index) => (
-              <motion.button
-                key={index}
-                onClick={() => handleSlideChange(index)}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.15, ease: "easeOut" }}
-                className={`w-3 h-3 rounded-full fast-transitions touch-optimized optimize-interactions ${
-                  index === currentSlide
-                    ? "bg-white shadow-glass"
-                    : "bg-white/50 hover:bg-white/70"
-                }`}
-                aria-label={`Ir a la diapositiva ${index + 1}`}
-                aria-current={index === currentSlide ? "true" : "false"}
-              />
-            ))}
-          </div>
-        </AnimatedSection>
-      )}
     </section>
   );
 };

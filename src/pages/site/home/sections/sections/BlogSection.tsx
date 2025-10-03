@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/common/AnimatedSection";
-import { motion } from "framer-motion";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import { blogPosts } from "@/data/blogData";
 
@@ -28,21 +27,14 @@ const BlogSection = () => {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection animation="slideUp">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredPosts.map((post, index) => (
-              <motion.article
-                key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  delay: index * 0.1,
-                  duration: 0.5,
-                  ease: "easeOut",
-                }}
-                className="group bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
-              >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredPosts.map((post, index) => (
+            <AnimatedSection
+              key={post.id}
+              animation="slideUp"
+              delay={0.2 + index * 0.1}
+            >
+              <article className="group bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 h-full">
                 <Link to={`/blog/${post.slug}`} className="block">
                   {/* Imagen */}
                   <div className="relative h-48 overflow-hidden bg-muted">
@@ -98,12 +90,12 @@ const BlogSection = () => {
                     </div>
                   </div>
                 </Link>
-              </motion.article>
-            ))}
-          </div>
-        </AnimatedSection>
+              </article>
+            </AnimatedSection>
+          ))}
+        </div>
 
-        <AnimatedSection animation="slideUp" delay={0.8}>
+        <AnimatedSection animation="slideUp" delay={0.2}>
           <div className="text-center mt-12">
             <Link to="/blog">
               <Button

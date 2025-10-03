@@ -14,7 +14,7 @@ export const useHeroImages = () => {
     () => [
       {
         src: "/images/UI/hero.jpg",
-        alt: "Instalación de suelos de madera - Psicosagra especialistas en Madrid",
+        alt: "Centro de Psicología Psicosagra - Especialistas en Madrid",
       },
     ],
     []

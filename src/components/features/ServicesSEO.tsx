@@ -3,30 +3,36 @@ import { Helmet } from "react-helmet-async";
 const ServicesSEO = () => (
   <Helmet>
     <title>
-      Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y
-      Más
+      Servicios de Psicología en Madrid | Psicosagra | Terapia Individual,
+      Familiar y Más
     </title>
     <meta
       name="description"
-      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de psicología en Madrid: terapia individual, familiar, infantil, neurodivergencias, psicología forense y nutrición clínica. 15+ años de experiencia, calidad garantizada."
     />
     <meta
       name="keywords"
-      content="servicios reformas Madrid, reformas integrales Madrid, reformas cocinas Madrid, reformas baños Madrid, diseño interiores Madrid, albañilería Madrid, electricidad Madrid, pintura Madrid, suelos Madrid, carpintería Madrid, presupuesto reformas Madrid"
+      content="servicios psicología Madrid, terapia Madrid, psicólogo Madrid, terapia infantil Madrid, terapia familiar Madrid, neurodivergencias Madrid, TDAH Madrid, TEA Madrid, psicología forense Madrid, nutrición clínica Madrid"
     />
     <meta
       property="og:title"
-      content="Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y Más"
+      content="Servicios de Psicología en Madrid | Psicosagra | Terapia Individual, Familiar y Más"
     />
     <meta
       property="og:description"
-      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de psicología en Madrid: terapia individual, familiar, infantil, neurodivergencias, psicología forense y nutrición clínica. 15+ años de experiencia, calidad garantizada."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://psicosagra.es/servicios" />
     <meta
       property="og:image"
-      content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+      content="https://psicosagra.es/images/logo/psicosagra.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Logo Psicosagra - Centro de Psicología en Madrid"
     />
     <meta property="og:site_name" content="Psicosagra" />
     <meta property="og:locale" content="es_ES" />
@@ -34,15 +40,19 @@ const ServicesSEO = () => (
     <meta property="twitter:url" content="https://psicosagra.es/servicios" />
     <meta
       property="twitter:title"
-      content="Servicios de Reformas Integrales en Madrid | Psicosagra | Cocinas, Baños y Más"
+      content="Servicios de Psicología en Madrid | Psicosagra | Terapia Individual, Familiar y Más"
     />
     <meta
       property="twitter:description"
-      content="Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos. 25+ años de experiencia, calidad garantizada."
+      content="Psicosagra ofrece servicios completos de psicología en Madrid: terapia individual, familiar, infantil, neurodivergencias, psicología forense y nutrición clínica. 15+ años de experiencia, calidad garantizada."
     />
     <meta
       property="twitter:image"
-      content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+      content="https://psicosagra.es/images/logo/psicosagra.png"
+    />
+    <meta
+      property="twitter:image:alt"
+      content="Logo Psicosagra - Centro de Psicología en Madrid"
     />
     <link rel="canonical" href="https://psicosagra.es/servicios" />
     <meta
@@ -59,15 +69,15 @@ const ServicesSEO = () => (
       {JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
-        name: "Servicios de Reformas Integrales en Madrid | Psicosagra",
+        name: "Servicios de Psicología en Madrid | Psicosagra",
         description:
-          "Psicosagra ofrece servicios completos de reformas en Madrid: reformas integrales, cocinas, baños, diseño de interiores, albañilería, electricidad, pintura y suelos.",
+          "Psicosagra ofrece servicios completos de psicología en Madrid: terapia individual, familiar, infantil, neurodivergencias, psicología forense y nutrición clínica.",
         url: "https://psicosagra.es/servicios",
         mainEntity: {
           "@type": "Service",
-          name: "Servicios de Reformas Integrales en Madrid",
+          name: "Servicios de Psicología en Madrid",
           description:
-            "Servicios completos de reformas y construcción en Madrid y alrededores",
+            "Servicios completos de psicología clínica y terapéutica en Madrid y alrededores",
           provider: {
             "@type": "LocalBusiness",
             name: "Psicosagra",

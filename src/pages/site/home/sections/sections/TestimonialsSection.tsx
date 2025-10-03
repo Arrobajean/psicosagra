@@ -1,7 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
 import AnimatedSection from "@/components/common/AnimatedSection";
-import { motion, AnimatePresence } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -122,7 +121,7 @@ const TestimonialsSection = () => {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection animation="slideUp" delay={0.3}>
+        <AnimatedSection animation="slideUp" delay={0.2}>
           <div className="relative">
             <Carousel
               opts={{
@@ -137,41 +136,12 @@ const TestimonialsSection = () => {
                     key={index}
                     className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3"
                   >
-                    <motion.div
-                      className="bg-muted/50 rounded-lg p-6 md:p-8 flex flex-col"
-                      whileHover={{
-                        scale: 1.02,
-                        y: -5,
-                        transition: { duration: 0.3 },
-                      }}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{
-                        delay: index * 0.1,
-                        duration: 0.5,
-                        ease: "easeOut",
-                      }}
-                    >
-                      <motion.div
-                        className="flex mb-4"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.3 + index * 0.05 }}
-                      >
+                    <div className="bg-muted/50 rounded-lg p-6 md:p-8 flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+                      <div className="flex mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <motion.div
-                            key={i}
-                            initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{
-                              delay: 0.4 + index * 0.05 + i * 0.05,
-                            }}
-                          >
-                            <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
-                          </motion.div>
+                          <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
                         ))}
-                      </motion.div>
+                      </div>
 
                       <div
                         className={`mb-4 overflow-hidden transition-all duration-500 ease-in-out ${
@@ -208,7 +178,7 @@ const TestimonialsSection = () => {
                           {testimonial.reformType}
                         </p>
                       </div>
-                    </motion.div>
+                    </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>

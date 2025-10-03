@@ -35,7 +35,7 @@ const AboutUsSection = () => {
 
         {/* Contenido: texto a la izquierda, imágenes a la derecha */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <AnimatedSection animation="slideLeft">
+          <AnimatedSection animation="slideRight" delay={0.2}>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               {/* Texto para móvil */}
               <div className="md:hidden">
@@ -128,7 +128,7 @@ const AboutUsSection = () => {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection animation="slideRight" delay={0.3}>
+          <AnimatedSection animation="slideLeft" delay={0.4}>
             <div className="masonry-container">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
@@ -173,12 +173,12 @@ const AboutUsSection = () => {
                     key={idx}
                     className={`glass-card rounded-2xl shadow-glass mb-4 overflow-hidden cursor-pointer relative group ${
                       style === "tall"
-                        ? "h-[28rem]" // ligeramente más alto para dos columnas
-                        : style === "wide"
-                        ? "h-72"
-                        : style === "square"
                         ? "h-80"
-                        : "h-72"
+                        : style === "wide"
+                        ? "h-48"
+                        : style === "square"
+                        ? "h-64"
+                        : "h-56"
                     }`}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}

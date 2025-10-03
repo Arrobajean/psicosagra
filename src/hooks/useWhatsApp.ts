@@ -4,7 +4,7 @@ export const useWhatsApp = () => {
   const handleWhatsAppClick = useCallback(() => {
     const phoneNumber = "919930664";
     const message = encodeURIComponent(
-      "Hola! Me gustaría solicitar un presupuesto para suelos de madera en mi hogar."
+      "Hola! Me gustaría solicitar información sobre los servicios de psicología."
     );
     const whatsappUrl = `https://wa.me/34${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, "_blank");

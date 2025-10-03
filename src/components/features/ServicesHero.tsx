@@ -4,8 +4,8 @@ const ServicesHero = () => (
       Nuestros Servicios
     </h1>
     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-      Especialistas en suelos, tarimas y parquet en Madrid. Calidad, precisión y
-      acabados profesionales.
+      Especialistas en psicología clínica y terapéutica en Madrid. Calidad,
+      precisión y atención profesional personalizada.
     </p>
   </div>
 );

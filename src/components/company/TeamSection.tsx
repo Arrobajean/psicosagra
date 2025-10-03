@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import AnimatedSection from "@/components/common/AnimatedSection";
-import { motion } from "framer-motion";
 import { teamMembers, processSteps, TeamMember } from "@/data/teamData";
 import TeamMemberModal from "./TeamMemberModal";
 
@@ -41,12 +40,10 @@ const TeamAndProcessSection = () => {
             <AnimatedSection
               key={index}
               animation="slideUp"
-              delay={index * 0.1}
+              delay={0.2 + index * 0.1}
             >
-              <motion.div
-                className="text-center cursor-pointer"
-                whileHover={{ y: -10, scale: 1.02 }}
-                transition={{ duration: 0.3 }}
+              <div
+                className="text-center cursor-pointer hover:-translate-y-2 hover:scale-[1.02] transition-transform duration-300"
                 onClick={() => handleMemberClick(member)}
               >
                 <div className="relative mb-6">
@@ -85,7 +82,7 @@ const TeamAndProcessSection = () => {
                 <button className="mt-4 text-black font-medium text-sm hover:underline">
                   Ver perfil completo →
                 </button>
-              </motion.div>
+              </div>
             </AnimatedSection>
           ))}
         </div>
@@ -109,9 +106,9 @@ const TeamAndProcessSection = () => {
             <AnimatedSection
               key={index}
               animation="slideUp"
-              delay={index * 0.15}
+              delay={0.2 + index * 0.1}
             >
-              <motion.div className="text-center p-6" whileHover={{ y: -5 }}>
+              <div className="text-center p-6 hover:-translate-y-1 transition-transform duration-300">
                 <div className="w-16 h-16 bg-black text-white rounded-xl flex items-center justify-center mx-auto mb-6">
                   <step.icon className="w-8 h-8" />
                 </div>
@@ -121,7 +118,7 @@ const TeamAndProcessSection = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
-              </motion.div>
+              </div>
             </AnimatedSection>
           ))}
         </div>

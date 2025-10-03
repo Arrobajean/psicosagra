@@ -38,7 +38,13 @@ const Blog = () => {
         <meta property="og:url" content="https://psicosagra.es/blog" />
         <meta
           property="og:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
         />
         <link rel="canonical" href="https://psicosagra.es/blog" />
         <meta name="robots" content="index, follow" />
@@ -108,7 +114,7 @@ const Blog = () => {
               <AnimatedSection
                 key={post.id}
                 animation="slideUp"
-                delay={index * 0.1}
+                delay={0.2 + index * 0.1}
               >
                 <Link to={`/blog/${post.slug}`} className="block h-full">
                   <article className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col cursor-pointer">
@@ -210,7 +216,7 @@ const Blog = () => {
           </div>
 
           {/* CTA Section */}
-          <AnimatedSection animation="fade" delay={0.4}>
+          <AnimatedSection animation="fade" delay={0.2}>
             <div className="text-center bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl p-12">
               <h2 className="text-3xl font-bold mb-4">
                 ¿Te gustaría profundizar más?

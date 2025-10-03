@@ -21,7 +21,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   once = true
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once, margin: "-100px" });
+  const isInView = useInView(ref, { once, margin: "-50px" });
 
   const variants = {
     fade: {
@@ -63,7 +63,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
       transition={{
         duration,
         delay,
-        ease: "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94]
       }}
       className={className}
     >

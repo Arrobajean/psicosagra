@@ -10,7 +10,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("todos");
 
   useEffect(() => {
-    document.title = "Psicosagra - Trabajos de Reformas Integrales | Madrid";
+    document.title = "Psicosagra - Casos de Éxito | Madrid";
   }, []);
 
   const filteredProjects = getProjectsByCategory(activeFilter);
@@ -18,22 +18,22 @@ const Projects = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Trabajos de reformas en Madrid | Psicosagra</title>
+        <title>Casos de Éxito en Psicología | Psicosagra</title>
         <meta
           name="description"
-          content="Descubre los trabajos de reformas integrales realizados por Psicosagra en Madrid. Inspiración, calidad y experiencia a tu servicio."
+          content="Descubre los casos de éxito y testimonios de terapia realizados por Psicosagra en Madrid. Experiencia, calidad y resultados a tu servicio."
         />
         <meta
           name="keywords"
-          content="trabajos, reformas integrales, Madrid, inspiración, empresa de reformas, casos de éxito"
+          content="casos de éxito, psicología Madrid, testimonios terapia, resultados psicología, centro psicología Madrid"
         />
         <meta
           property="og:title"
-          content="Trabajos de reformas en Madrid | Psicosagra"
+          content="Casos de Éxito en Psicología | Psicosagra"
         />
         <meta
           property="og:description"
-          content="Explora nuestros trabajos de reformas en Madrid y encuentra ideas para tu hogar o negocio."
+          content="Explora nuestros casos de éxito en psicología en Madrid y descubre cómo podemos ayudarte."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -42,7 +42,13 @@ const Projects = () => {
         />
         <meta
           property="og:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
         />
         <link rel="canonical" href="https://psicosagra.es/nuestros-trabajos" />
         <meta name="robots" content="index, follow" />
@@ -50,10 +56,10 @@ const Projects = () => {
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": "Trabajos de reformas en Madrid | Psicosagra",
-            "description": "Trabajos de reformas integrales realizados en Madrid por Psicosagra.",
+            "name": "Casos de Éxito en Psicología | Psicosagra",
+            "description": "Casos de éxito y testimonios de terapia realizados en Madrid por Psicosagra.",
             "url": "https://psicosagra.es/nuestros-trabajos",
-            "image": "https://psicosagra.es/favicon/android-chrome-192x192.png"
+            "image": "https://psicosagra.es/images/logo/psicosagra.png"
           }
         `}</script>
       </Helmet>
@@ -62,13 +68,13 @@ const Projects = () => {
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Nuestros Trabajos
+              Casos de Éxito
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Descubre nuestras reformas integrales más destacadas en toda la
-              Comunidad de Madrid. Cada trabajo refleja la excelencia y
-              experiencia de más de 25 años transformando espacios en la capital
-              y sus alrededores.
+              Descubre los casos de éxito más destacados de nuestro centro de
+              psicología en Madrid. Cada testimonio refleja la excelencia y
+              experiencia de más de 15 años ayudando a personas y familias en la
+              capital y sus alrededores.
             </p>
           </div>
 
@@ -163,11 +169,11 @@ const Projects = () => {
           {/* CTA Section */}
           <div className="text-center bg-muted/30 rounded-lg p-12 animate-fade-in">
             <h2 className="text-3xl font-bold text-primary mb-4">
-              ¿Te inspiró algún proyecto?
+              ¿Te identificas con algún caso?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Cada reforma es una historia única. Cuéntanos la tuya y crearemos
-              el espacio que siempre has soñado.
+              Cada persona es única. Cuéntanos tu situación y te ayudaremos a
+              encontrar el camino hacia tu bienestar.
             </p>
             <Link to="/contacto">
               <button className="group flex items-center justify-center bg-primary text-white px-8 py-4 rounded-md hover:bg-primary/90 transition-colors font-medium text-lg mx-auto">

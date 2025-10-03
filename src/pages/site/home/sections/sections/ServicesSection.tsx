@@ -68,29 +68,27 @@ const ServicesSection = () => {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection animation="fade">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <AnimatedSection key={index} animation="fade" delay={index * 0.1}>
-                <div className="glass-card rounded-2xl p-8 h-full cursor-pointer group">
-                  <div className="mb-6 text-center">
-                    <IconWithRotateInView>
-                      <service.icon className="w-8 h-8 text-white" />
-                    </IconWithRotateInView>
-                  </div>
-                  <h4 className="text-xl font-semibold text-black mb-4 text-center">
-                    {service.title}
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed text-center">
-                    {service.description}
-                  </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <AnimatedSection key={index} animation="slideUp" delay={0.2 + index * 0.1}>
+              <div className="glass-card rounded-2xl p-8 h-full cursor-pointer group">
+                <div className="mb-6 text-center">
+                  <IconWithRotateInView>
+                    <service.icon className="w-8 h-8 text-white" />
+                  </IconWithRotateInView>
                 </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </AnimatedSection>
+                <h4 className="text-xl font-semibold text-black mb-4 text-center">
+                  {service.title}
+                </h4>
+                <p className="text-gray-600 leading-relaxed text-center">
+                  {service.description}
+                </p>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
 
-        <AnimatedSection animation="slideUp" delay={0.6}>
+        <AnimatedSection animation="slideUp" delay={0.2}>
           <div className="text-center mt-12">
             <Link to="/servicios">
               <Button
@@ -114,7 +112,7 @@ const ServicesSection = () => {
 
 function IconWithRotateInView({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
   return (
     <motion.div
       ref={ref}

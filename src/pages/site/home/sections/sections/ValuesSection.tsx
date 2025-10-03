@@ -43,31 +43,29 @@ const ValuesSection = () => {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection animation="slideUp">
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <AnimatedSection
-                key={index}
-                animation="slideUp"
-                delay={index * 0.15}
-              >
-                <div className="text-center h-full">
-                  <div className="glass-card rounded-2xl p-8 h-full group">
-                    <IconWithRotateInView>
-                      <value.icon className="w-8 h-8 text-white" />
-                    </IconWithRotateInView>
-                    <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
-                      {value.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {values.map((value, index) => (
+            <AnimatedSection
+              key={index}
+              animation="slideUp"
+              delay={0.2 + index * 0.15}
+            >
+              <div className="text-center h-full">
+                <div className="glass-card rounded-2xl p-8 h-full group">
+                  <IconWithRotateInView>
+                    <value.icon className="w-8 h-8 text-white" />
+                  </IconWithRotateInView>
+                  <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {value.description}
+                  </p>
                 </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </AnimatedSection>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -75,7 +73,7 @@ const ValuesSection = () => {
 
 function IconWithRotateInView({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
   return (
     <motion.div
       ref={ref}

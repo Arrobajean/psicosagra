@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Target, Eye, Heart } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AnimatedSection from "@/components/common/AnimatedSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,68 +58,84 @@ const CompanyAboutSection = () => {
       <div className="container mx-auto px-6 py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h2 className="text-sm font-medium text-gray-500 mb-4 tracking-wider uppercase">
-              El corazón del centro
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Transformando vidas a través del bienestar integral
+            <AnimatedSection animation="slideRight">
+              <h2 className="text-sm font-medium text-gray-500 mb-4 tracking-wider uppercase">
+                El corazón del centro
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                Transformando vidas a través del bienestar integral
+              </h3>
+            </AnimatedSection>
+
+            <AnimatedSection animation="slideRight" delay={0.15}>
+              <div className="space-y-6 text-gray-600 leading-relaxed">
+                <h4 className="text-lg font-semibold text-black mb-4">
+                  Nuestra Historia
+                </h4>
+                <p>
+                  En <strong className="text-black">Psicosagra</strong>, somos
+                  un centro especializado en Psicología y Nutrición Clínica
+                  ubicado en Illescas. Nuestro enfoque único combina el cuidado
+                  de la mente y el cuerpo para ofrecer un tratamiento integral
+                  que aborda tu bienestar desde todas las perspectivas.
+                </p>
+                <p>
+                  Nuestra especialización en{" "}
+                  <strong className="text-black">
+                    terapia psicológica, nutrición clínica y atención
+                    personalizada
+                  </strong>{" "}
+                  nos ha convertido en un centro de referencia en Illescas,
+                  donde cada paciente recibe un plan de tratamiento diseñado a
+                  medida con la máxima calidad y profesionalidad.
+                </p>
+                <p className="text-sm text-gray-500 mt-4">
+                  Nuestro compromiso es ofrecer un espacio seguro y de
+                  confianza, donde puedas sentirte escuchado, comprendido y
+                  acompañado en tu proceso de cambio hacia una vida más plena y
+                  saludable.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animation="slideUp" delay={0.25}>
+              <div className="mt-8 grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-black">500+</div>
+                  <div className="text-sm text-gray-500">Pacientes</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-black">6</div>
+                  <div className="text-sm text-gray-500">Profesionales</div>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          <AnimatedSection animation="slideLeft" delay={0.2}>
+            <div className="rounded-2xl overflow-hidden shadow-md">
+              <img
+                src="/placeholder.svg"
+                alt="Centro de Psicología y Nutrición Psicosagra en Illescas"
+                className="w-full h-80 object-cover"
+                loading="lazy"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <AnimatedSection animation="slideUp">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              Lo que nos mueve en Psicosagra
             </h3>
-            <div className="space-y-6 text-gray-600 leading-relaxed">
-              <h4 className="text-lg font-semibold text-black mb-4">
-                Nuestra Historia
-              </h4>
-              <p>
-                En <strong className="text-black">Psicosagra</strong>, somos un
-                centro especializado en Psicología y Nutrición Clínica ubicado
-                en Illescas. Nuestro enfoque único combina el cuidado de la
-                mente y el cuerpo para ofrecer un tratamiento integral que
-                aborda tu bienestar desde todas las perspectivas.
-              </p>
-              <p>
-                Nuestra especialización en{" "}
-                <strong className="text-black">
-                  terapia psicológica, nutrición clínica y atención
-                  personalizada
-                </strong>{" "}
-                nos ha convertido en un centro de referencia en Illescas, donde
-                cada paciente recibe un plan de tratamiento diseñado a medida
-                con la máxima calidad y profesionalidad.
-              </p>
-              <p className="text-sm text-gray-500 mt-4">
-                Nuestro compromiso es ofrecer un espacio seguro y de confianza,
-                donde puedas sentirte escuchado, comprendido y acompañado en tu
-                proceso de cambio hacia una vida más plena y saludable.
-              </p>
-            </div>
-            <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-black">500+</div>
-                <div className="text-sm text-gray-500">Pacientes</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-black">6</div>
-                <div className="text-sm text-gray-500">Profesionales</div>
-              </div>
-            </div>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              No solo tratamos síntomas, acompañamos procesos de cambio real
+              hacia una vida más plena, equilibrada y saludable en todos los
+              aspectos.
+            </p>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <img
-              src="/placeholder.svg"
-              alt="Centro de Psicología y Nutrición Psicosagra en Illescas"
-              className="w-full h-80 object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div className="text-center mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-            Lo que nos mueve en Psicosagra
-          </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            No solo tratamos síntomas, acompañamos procesos de cambio real hacia
-            una vida más plena, equilibrada y saludable en todos los aspectos.
-          </p>
-        </div>
+        </AnimatedSection>
         <div
           ref={cardsRef}
           className="grid md:grid-cols-3 gap-8 about-card-group"

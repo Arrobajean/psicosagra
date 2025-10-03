@@ -31,9 +31,9 @@ const Footer = memo<FooterProps>(({ showCredit = true }) => {
                 className="flex items-center justify-center lg:justify-start"
               >
                 <img
-                  src="/images/logo/psicosagra.png"
+                  src="/images/logo/logo_psicosagra1.png"
                   alt="Logo Psicosagra"
-                  className="h-24 md:h-28 lg:h-32 w-auto max-w-[360px] object-contain mx-auto"
+                  className="h-24 md:h-28 lg:h-32 w-auto max-w-[360px] object-contain mx-auto brightness-0 invert"
                   loading="lazy"
                 />
               </Link>
@@ -49,7 +49,7 @@ const Footer = memo<FooterProps>(({ showCredit = true }) => {
 
               {/* Social Media */}
               <div
-                className="flex justify-center lg:justify-start space-x-4"
+                className="flex justify-center space-x-4"
                 role="list"
                 aria-label="Redes sociales"
               >

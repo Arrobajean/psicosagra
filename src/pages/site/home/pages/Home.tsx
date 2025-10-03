@@ -15,33 +15,35 @@ const Home = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>
-          Psicosagra - Expertos en suelos de madera, tarima y parquet en Madrid
-        </title>
+        <title>Psicosagra - Centro de Psicología en Madrid</title>
         <meta
           name="description"
-          content="Psicosagra: Expertos en suelos de madera, tarima y parquet en Madrid. Instalación, restauración, acuchillado, pulido y aceitado. Calidad garantizada y presupuesto gratuito."
+          content="Psicosagra: Centro de psicología especializado en Madrid. Terapia individual, familiar, infantil y neurodivergencias. Más de 15 años de experiencia."
         />
         <meta
           name="keywords"
-          content="reformas integrales Madrid, empresa reformas Madrid, reformas viviendas Madrid, reformas locales Madrid, reformas oficinas Madrid, cocinas Madrid, baños Madrid, albañilería Madrid, electricidad Madrid, fontanería Madrid, alisado Madrid, pintura Madrid, suelos Madrid, carpintería Madrid, presupuesto reformas Madrid, garantía reformas Madrid"
+          content="psicología Madrid, terapia Madrid, psicólogo Madrid, terapia infantil Madrid, terapia familiar Madrid, neurodivergencias Madrid, TDAH Madrid, TEA Madrid, psicología forense Madrid, nutrición clínica Madrid, centro psicología Madrid"
         />
         <meta
           property="og:title"
-          content="Psicosagra - Expertos en suelos de madera, tarima y parquet en Madrid"
+          content="Psicosagra - Centro de Psicología en Madrid"
         />
         <meta
           property="og:description"
-          content="Psicosagra: Expertos en suelos de madera, tarima y parquet en Madrid. Instalación, restauración, acuchillado, pulido y aceitado. Calidad garantizada y presupuesto gratuito."
+          content="Psicosagra: Centro de psicología especializado en Madrid. Terapia individual, familiar, infantil y neurodivergencias. Más de 15 años de experiencia."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://psicosagra.es/" />
         <meta
           property="og:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
+        />
         <meta property="og:site_name" content="Psicosagra" />
         <meta property="og:locale" content="es_ES" />
 
@@ -50,15 +52,19 @@ const Home = () => {
         <meta property="twitter:url" content="https://psicosagra.es/" />
         <meta
           property="twitter:title"
-          content="Psicosagra - Expertos en suelos de madera, tarima y parquet en Madrid"
+          content="Psicosagra - Centro de Psicología en Madrid"
         />
         <meta
           property="twitter:description"
-          content="Psicosagra: Expertos en suelos de madera, tarima y parquet en Madrid. Instalación, restauración, acuchillado, pulido y aceitado. Calidad garantizada y presupuesto gratuito."
+          content="Psicosagra: Centro de psicología especializado en Madrid. Terapia individual, familiar, infantil y neurodivergencias. Más de 15 años de experiencia."
         />
         <meta
           property="twitter:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
+        />
+        <meta
+          property="twitter:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
         />
 
         {/* Canonical URL */}
@@ -81,15 +87,15 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Psicosagra - Expertos en suelos de madera, tarima y parquet en Madrid",
+            name: "Psicosagra - Centro de Psicología en Madrid",
             description:
-              "Psicosagra: Expertos en suelos de madera, tarima y parquet en Madrid. Instalación, restauración, acuchillado, pulido y aceitado. Calidad garantizada y presupuesto gratuito.",
+              "Psicosagra: Centro de psicología especializado en Madrid. Terapia individual, familiar, infantil y neurodivergencias. Más de 15 años de experiencia.",
             url: "https://psicosagra.es/",
             mainEntity: {
               "@type": "LocalBusiness",
               name: "Psicosagra",
               description:
-                "Empresa de reformas integrales en Madrid con más de 25 años de experiencia",
+                "Centro de psicología especializado en Madrid con más de 15 años de experiencia",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Calle de San Gumersindo 7",

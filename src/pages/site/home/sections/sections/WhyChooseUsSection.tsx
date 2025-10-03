@@ -48,14 +48,15 @@ const WhyChooseUsSection = ({
           </div>
         </AnimatedSection>
 
-        <AnimatedSection animation="slideUp" delay={0.3}>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
-              {displayReasons.map((reason, index) => (
-                <div
-                  key={index}
-                  className="flex items-start space-x-4 glass-card-dark rounded-xl p-6"
-                >
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-6">
+            {displayReasons.map((reason, index) => (
+              <AnimatedSection
+                key={index}
+                animation="slideUp"
+                delay={0.2 + index * 0.1}
+              >
+                <div className="flex items-start space-x-4 glass-card-dark rounded-xl p-6">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                       <Check className="w-5 h-5 text-white" />
@@ -66,10 +67,10 @@ const WhyChooseUsSection = ({
                     dangerouslySetInnerHTML={{ __html: reason }}
                   />
                 </div>
-              ))}
-            </div>
+              </AnimatedSection>
+            ))}
           </div>
-        </AnimatedSection>
+        </div>
       </div>
     </section>
   );

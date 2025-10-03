@@ -21,25 +21,25 @@ const CompanyHeroSection = () => {
                   className="w-56 h-56 object-contain mb-4"
                   loading="lazy"
                 />
-                <p className="text-xl text-gray-300">Expertos en Suelos</p>
+                <p className="text-xl text-gray-300">Centro de Psicología</p>
               </div>
             </AnimatedSection>
 
-            <AnimatedSection animation="slideRight" delay={0.2}>
+            <AnimatedSection animation="slideRight" delay={0.15}>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Más de 15 años transformando espacios
               </h2>
             </AnimatedSection>
 
-            <AnimatedSection animation="fade" delay={0.4}>
+            <AnimatedSection animation="fade" delay={0.25}>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Empresa especializada en suelos de madera, parquet y tarimas en
+                Centro especializado en psicología clínica y terapéutica en
                 Madrid. Ofrecemos servicios de calidad con un equipo profesional
-                dedicado a cada proyecto.
+                dedicado a cada persona y familia.
               </p>
             </AnimatedSection>
 
-            <AnimatedSection animation="slideUp" delay={0.6}>
+            <AnimatedSection animation="slideUp" delay={0.35}>
               <div className="grid grid-cols-4 gap-2 md:gap-6">
                 <motion.div className="text-center" whileHover={{ scale: 1.1 }}>
                   <Clock className="w-5 h-5 md:w-8 md:h-8 text-white mx-auto mb-0.5 md:mb-2" />
@@ -73,7 +73,7 @@ const CompanyHeroSection = () => {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection animation="slideLeft" delay={0.3}>
+          <AnimatedSection animation="slideLeft" delay={0.2}>
             <div className="relative mb-8 md:mb-0">
               <motion.div
                 className="rounded-2xl overflow-hidden shadow-2xl"
@@ -82,7 +82,7 @@ const CompanyHeroSection = () => {
               >
                 <img
                   src="/images/UI/landing1.jpeg"
-                  alt="Proyecto Psicosagra - Suelo de madera"
+                  alt="Centro Psicosagra - Espacio de terapia"
                   className="w-full h-96 object-cover"
                 />
               </motion.div>

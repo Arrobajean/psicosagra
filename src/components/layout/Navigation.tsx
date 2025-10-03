@@ -70,8 +70,13 @@ const Navigation = memo(() => {
               <img
                 src={logoSrc}
                 alt="Logo Psicosagra"
-                className="h-16 sm:h-18 md:h-12 lg:h-14 w-auto max-w-[220px] sm:max-w-[240px] md:max-w-[220px] object-contain transition-all duration-300 bg-transparent rounded-lg group-hover:animate-logo-bounce"
+                className="h-12 sm:h-14 md:h-14 lg:h-16 xl:h-18 w-auto max-w-[160px] sm:max-w-[180px] md:max-w-[200px] lg:max-w-[220px] xl:max-w-[240px] object-contain transition-all duration-300 bg-transparent rounded-lg group-hover:animate-logo-bounce brightness-0 invert"
               />
+              <span
+                className={`uppercase tracking-wide text-base lg:text-lg font-semibold transition-all duration-300 relative group text-white`}
+              >
+                PSICOSAGRA
+              </span>
             </Link>
 
             {/* Desktop Navigation */}

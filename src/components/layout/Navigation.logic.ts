@@ -65,7 +65,7 @@ const useNavigationLogic = () => {
     ]
   );
 
-  const logoSrc = "/images/logo/psicosagra.png";
+  const logoSrc = "/images/logo/logo_psicosagra2.png";
 
   return {
     // state

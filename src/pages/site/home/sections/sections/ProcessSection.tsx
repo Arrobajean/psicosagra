@@ -1,39 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Search, FileText, Calendar, Wrench, Key } from "lucide-react";
 import AnimatedSection from "@/components/common/AnimatedSection";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const ProcessSection = () => {
   const steps = [
     {
       icon: Search,
-      title: "Visita y asesoría técnica gratuita",
+      title: "Consulta inicial gratuita",
       description:
-        "Medición del suelo, evaluación del estado y recomendaciones: instalación, acuchillado o mantenimiento.",
+        "Evaluación de necesidades, análisis de la situación y recomendaciones sobre el tipo de terapia más adecuada.",
     },
     {
       icon: FileText,
-      title: "Presupuesto detallado (< 24/48h)",
+      title: "Plan de tratamiento personalizado",
       description:
-        "Opciones de materiales (barnices al agua, aceites, tarimas) y plan de trabajo transparente.",
+        "Diseño de un plan terapéutico adaptado a tus necesidades específicas con objetivos claros y medibles.",
     },
     {
       icon: Calendar,
-      title: "Planificación y preparación",
+      title: "Sesiones programadas",
       description:
-        "Protección de mobiliario, preparación del soporte y calendario de ejecución sin sorpresas.",
+        "Establecimiento de horarios regulares y preparación del entorno terapéutico para tu comodidad.",
     },
     {
       icon: Wrench,
-      title: "Ejecución especializada",
+      title: "Intervención especializada",
       description:
-        "Maquinaria profesional para lijado, acuchillado y aplicación de acabados de alta resistencia.",
+        "Aplicación de técnicas terapéuticas basadas en evidencia científica y adaptadas a tu caso particular.",
     },
     {
       icon: Key,
-      title: "Entrega y mantenimiento",
+      title: "Seguimiento y mantenimiento",
       description:
-        "Limpieza final, recomendaciones de cuidado y plan de mantenimiento opcional (aceitado/pulido).",
+        "Evaluación de progresos, ajustes del tratamiento y herramientas para mantener los logros alcanzados.",
     },
   ];
 
@@ -49,8 +49,8 @@ const ProcessSection = () => {
               Nuestro proceso de trabajo
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Metodología especializada para suelos de madera. Resultado
-              profesional y duradero.
+              Metodología especializada en psicología clínica. Resultado
+              profesional y duradero para tu bienestar.
             </p>
           </div>
         </AnimatedSection>
@@ -65,42 +65,14 @@ const ProcessSection = () => {
                 <AnimatedSection
                   key={index}
                   animation="slideUp"
-                  delay={index * 0.15}
+                  delay={0.2 + index * 0.1}
                 >
-                  <motion.div className="relative flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 group">
+                  <div className="relative flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 group">
                     {/* Ícono */}
                     <div className="flex-shrink-0 relative mx-auto md:mx-0">
-                      <motion.div
-                        className="w-12 h-12 md:w-14 md:h-14 bg-black rounded-full flex items-center justify-center shadow-glass relative z-10 group-hover:bg-[#2563eb] transition-colors duration-300"
-                        initial={{ rotate: -180, opacity: 0, scale: 0.5 }}
-                        whileInView={{
-                          rotate: 0,
-                          opacity: 1,
-                          scale: 1,
-                          transition: {
-                            type: "spring",
-                            stiffness: 200,
-                            damping: 10,
-                            duration: 0.8,
-                            delay: index * 0.15,
-                          },
-                        }}
-                        whileHover={{
-                          scale: [1, 1.2, 1],
-                          transition: {
-                            duration: 0.6,
-                            times: [0, 0.5, 1],
-                            ease: "easeInOut",
-                          },
-                        }}
-                        whileTap={{
-                          scale: 0.95,
-                          transition: { duration: 0.1 },
-                        }}
-                        viewport={{ once: true }}
-                      >
+                      <IconWithRotateInView>
                         <step.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
-                      </motion.div>
+                      </IconWithRotateInView>
                     </div>
 
                     {/* Contenido */}
@@ -112,7 +84,7 @@ const ProcessSection = () => {
                         {step.description}
                       </p>
                     </div>
-                  </motion.div>
+                  </div>
                 </AnimatedSection>
               ))}
             </div>
@@ -122,5 +94,46 @@ const ProcessSection = () => {
     </section>
   );
 };
+
+function IconWithRotateInView({ children }: { children: React.ReactNode }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ rotate: -180, opacity: 0, scale: 0.5 }}
+      animate={
+        isInView
+          ? {
+              rotate: 0,
+              opacity: 1,
+              scale: 1,
+              transition: {
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+                duration: 0.8,
+              },
+            }
+          : {}
+      }
+      className="w-12 h-12 md:w-14 md:h-14 bg-black rounded-full flex items-center justify-center shadow-glass relative z-10 group-hover:bg-[#2563eb] transition-colors duration-300"
+      whileHover={{
+        scale: [1, 1.2, 1],
+        transition: {
+          duration: 0.6,
+          times: [0, 0.5, 1],
+          ease: "easeInOut",
+        },
+      }}
+      whileTap={{
+        scale: 0.95,
+        transition: { duration: 0.1 },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 export default ProcessSection;

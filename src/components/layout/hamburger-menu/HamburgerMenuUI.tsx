@@ -4,7 +4,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { SiTiktok, SiInstagram, SiYoutube } from "react-icons/si";
+import { SiTiktok, SiInstagram, SiFacebook, SiLinkedin } from "react-icons/si";
 
 interface HamburgerMenuUIProps {
   isOpen: boolean;
@@ -208,7 +208,7 @@ export const HamburgerMenuUI = ({
             <div
               style={{
                 position: "absolute",
-                bottom: "40px",
+                bottom: "max(72px, env(safe-area-inset-bottom, 0px) + 24px)",
                 left: "50%",
                 transform: "translateX(-50%)",
                 textAlign: "center",
@@ -238,7 +238,28 @@ export const HamburgerMenuUI = ({
                 }}
               >
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100063475091329"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    width: "48px",
+                    height: "48px",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "white",
+                    textDecoration: "none",
+                    transition: "all 0.3s ease",
+                  }}
+                  className="hover:bg-[#2563eb] hover:scale-110"
+                  aria-label="Visitar perfil de Facebook de Psicosagra (se abre en ventana nueva)"
+                >
+                  <SiFacebook size={20} aria-hidden="true" />
+                </a>
+                <a
+                  href="https://www.instagram.com/psicosagra"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -259,7 +280,7 @@ export const HamburgerMenuUI = ({
                   <SiInstagram size={20} aria-hidden="true" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@psicosagra"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -280,7 +301,7 @@ export const HamburgerMenuUI = ({
                   <SiTiktok size={20} aria-hidden="true" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/psicosagra-consulta-de-psicología-y-logopedia/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -296,9 +317,9 @@ export const HamburgerMenuUI = ({
                     transition: "all 0.3s ease",
                   }}
                   className="hover:bg-[#2563eb] hover:scale-110"
-                  aria-label="Visitar canal de YouTube de Psicosagra (se abre en ventana nueva)"
+                  aria-label="Visitar perfil de LinkedIn de Psicosagra (se abre en ventana nueva)"
                 >
-                  <SiYoutube size={20} aria-hidden="true" />
+                  <SiLinkedin size={20} aria-hidden="true" />
                 </a>
               </div>
             </div>

@@ -220,7 +220,13 @@ const Contact = () => {
         <meta property="og:url" content="https://psicosagra.es/contacto" />
         <meta
           property="og:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
         />
         <link rel="canonical" href="https://psicosagra.es/contacto" />
         <meta name="robots" content="index, follow" />
@@ -231,7 +237,7 @@ const Contact = () => {
             "name": "Psicosagra",
             "description": "Centro integral en Illescas. Psicología y Nutrición Clínica para todas las edades.",
             "url": "https://psicosagra.es/contacto",
-            "logo": "https://psicosagra.es/favicon/android-chrome-192x192.png",
+            "logo": "https://psicosagra.es/images/logo/psicosagra.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Calle Puerta del Sol, 2",

@@ -27,7 +27,7 @@ const AboutUs = () => {
       description:
         "Centro especializado en Psicología y Nutrición Clínica en Illescas",
       url: "https://psicosagra.es",
-      logo: "https://psicosagra.es/favicon/android-chrome-192x192.png",
+      logo: "https://psicosagra.es/images/logo/psicosagra.png",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Calle de la Constitución 12",
@@ -81,7 +81,13 @@ const AboutUs = () => {
         <meta property="og:url" content="https://psicosagra.es/nosotros" />
         <meta
           property="og:image"
-          content="https://psicosagra.es/favicon/android-chrome-192x192.png"
+          content="https://psicosagra.es/images/logo/psicosagra.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Logo Psicosagra - Centro de Psicología en Madrid"
         />
         <link rel="canonical" href="https://psicosagra.es/nosotros" />
         <meta name="robots" content="index, follow" />
@@ -92,7 +98,7 @@ const AboutUs = () => {
             "name": "Psicosagra",
             "description": "Centro especializado en Psicología y Nutrición Clínica en Illescas.",
             "url": "https://psicosagra.es/nosotros",
-            "logo": "https://psicosagra.es/favicon/android-chrome-192x192.png",
+            "logo": "https://psicosagra.es/images/logo/psicosagra.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Calle de la Constitución 12",
